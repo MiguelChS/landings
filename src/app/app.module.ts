@@ -1,14 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { MbCardModule, MbButtonModule } from '@am/moebius';
 import { AppComponent } from './app.component';
-
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MbCardModule,
+    MbButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

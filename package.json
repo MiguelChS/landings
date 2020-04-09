@@ -7,12 +7,17 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "sass": "sass --no-source-map --style=compressed"
   },
   "private": true,
   "dependencies": {
+    "@am/common-svg-icons": "^2.2.0",
+    "@am/icons-common-types": "^2.0.5",
+    "@am/moebius": "^1.0.0-rc.2",
     "@angular-builders/jest": "^9.0.0",
     "@angular/animations": "~8.2.14",
+    "@angular/cdk": "^8.2.3",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
     "@angular/core": "~8.2.14",

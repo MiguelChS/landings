@@ -85,6 +85,7 @@
           "builder": "@angular-builders/jest:run",
           "options": {
             "runInBand": true,
+            "coverage": true,
             "tsConfig": "tsconfig.spec.json"
           }
         },

@@ -1,0 +1,466 @@
+body {
+    margin: 0;
+}
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.landingGreenEat {
+    &__header {
+        padding: 10px;
+    }
+    &__body {
+        background-color: rgb(235, 123, 2);
+    }
+    &__logo {
+        width: 150px;
+        display: block;
+    }
+    &__bannerMain {
+        background-size: cover;
+        background-image: url("../image/bannerMain.jpg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        position: relative;
+        height: 300px;
+    }
+    &__mask {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: radial-gradient(circle at 50% 23%, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.1));
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+    }
+    &__imgTextMain {
+        width: 290px;
+        margin-top: 40px;
+    }
+    &__btnPlus {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background: rgb(235, 123, 2);
+        border-radius: 13px;
+        font-size: 26px;
+        line-height: 26px;
+        padding: 8px;
+        text-align: center;
+        margin-top: 24px;
+        cursor: pointer;
+    }
+    &__textParrafo {
+        margin: 0;
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+        padding: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+    &__sectionClub {
+        background-color: #105a5c;
+        text-align: center;
+        padding: 40px 20px 40px 20px;
+    }
+    &__titleClub {
+        margin: 0;
+        color: white;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 34px;
+        margin-bottom: 40px;
+    }
+    &__cardText {
+        color: white;
+        margin: 0;
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+    &__cardRow {
+        display: flex;
+        &:first-of-type {
+            margin-bottom: 30px;
+        }
+    }
+    &__card {
+        flex: 1;
+        &:first-child {
+            margin-right: 40px;
+        }
+    }
+    &__cardImage {
+        max-width: 150px;
+    }
+    &__imagePromotion {
+        background-image: url("../image/cafebudin.jpg");
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    &__contentPromotion {
+        background: rgb(235, 123, 2);
+        padding: 16px;
+        text-align: center;
+    }
+    &__headerPromotion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f3b56c;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+    &__titlePromotion {
+        color: white;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 25px;
+        margin: 0;
+        text-align: left;
+    }
+    &__pricePromotion {
+        color: white;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 25px;
+        margin: 0;
+    }
+    &__rowPromotion {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__iconPromotion {
+        width: 40px;
+        margin-right: 8px;
+    }
+    &__textPromotion {
+        margin: 0;
+        font-size: 16px;
+        line-height: 18px;
+        color: white;
+        text-align: left;
+    }
+    &__btnPromotion {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        background: #105a5c;
+        font-size: 25px;
+        line-height: 25px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    &__sectionThank {
+        background-color: #105a5c;
+        padding: 20px 8px;
+    }
+    &__textEnd1 {
+        color: white;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 28px;
+        text-align: center;
+        margin: 0;
+        padding: 0 16px;
+    }
+    &__textEnd2 {
+        margin: 0;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 35px;
+        margin-top: 20px;
+        padding: 0 16px;
+    }
+    &__imagelove {
+        width: 30px;
+    }
+    &__footer {
+        background: #d6d6d6;
+        padding: 16px 16px 0 16px;
+    }
+    &__stalktext {
+        margin: 0;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #231f20;
+    }
+    &__iconRedSocial {
+        width: 250px;
+    }
+    &__footerLine {
+        border: 1px solid #b7b7b7;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    &__footerContent {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__footerContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__footerMail {
+        margin: 0;
+        color: rgb(235, 123, 2);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    &__footerCopy {
+        margin: 0;
+        font-size: 16px;
+        line-height: 16px;
+        color: #231f20;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    &__footerCarrot {
+        width: 80px;
+    }
+    &__footer-dk {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .landingGreenEat {
+        &__imgTextMain {
+            width: 350px;
+        }
+        &__contentPromotion {
+            padding: 20px;
+        }
+        &__imagePromotion {
+            background-position: initial;
+            background-position-y: 74%;
+        }
+        &__titlePromotion,
+        &__pricePromotion {
+            font-size: 47px;
+            line-height: 47px;
+        }
+        &__iconPromotion {
+            width: 60px;
+            margin-right: 16px;
+        }
+        &__textPromotion {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__rowPromotion {
+            margin-bottom: 50px;
+            &:last-of-type {
+                margin-bottom: 30px;
+            }
+        }
+        &__headerPromotion {
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+        &__btnPromotion {
+            font-size: 36px;
+            line-height: 38px;
+            padding: 16px;
+        }
+        &__sectionThank {
+            padding: 40px 8px;
+        }
+        &__textEnd1 {
+            line-height: 37px;
+            padding: 0 50px;
+        }
+        &__textEnd2 {
+            font-size: 60px;
+            line-height: 73px;
+        }
+        &__imagelove {
+            width: 60px;
+        }
+        &__stalktext {
+            font-size: 18px;
+            line-height: 27px;
+        }
+        &__iconRedSocial {
+            width: 270px;
+        }
+        &__footerLine {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &__footerMail {
+            font-size: 29px;
+            line-height: 50px;
+        }
+        &__footerCopy {
+            font-size: 21px;
+            line-height: 26px;
+        }
+        &__footerCarrot {
+            width: 200px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .landingGreenEat {
+        &__bannerMain {
+            height: 450px;
+        }
+        &__imgTextMain {
+            width: 490px;
+            margin-top: 70px;
+        }
+        &__btnPlus {
+            font-size: 32px;
+            line-height: 38px;
+            margin-top: 50px;
+        }
+        &__textParrafo {
+            font-size: 34px;
+            line-height: 47px;
+            padding: 0;
+            width: 840px;
+            margin: 40px auto;
+        }
+        &__sectionClub {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__titleClub {
+            font-size: 42px;
+            line-height: 50px;
+            flex: 1 0 100%;
+            font-weight: 600;
+        }
+        &__cardRow {
+            flex: 1;
+            &:first-of-type {
+                justify-content: flex-end;
+            }
+        }
+        &__cardText {
+            font-size: 17px;
+            line-height: 23px;
+        }
+        &__card {
+            max-width: 250px;
+            padding: 0 10px;
+            margin: 0;
+            &:first-child {
+                margin: 0;
+            }
+        }
+        &__cardImage {
+            max-width: 130px;
+        }
+        &__sectionPromotion {
+            display: flex;
+        }
+        &__imagePromotion {
+            flex: 1;
+            height: initial;
+        }
+        &__contentPromotion {
+            flex: 1;
+            padding: 38px 30px 30px 20px;
+        }
+        &__titlePromotion,
+        &__pricePromotion {
+            font-size: 42px;
+            line-height: 50px;
+        }
+        &__iconPromotion {
+            width: 53px;
+        }
+        &__textPromotion {
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__btnPromotion {
+            font-size: 32px;
+            padding: 6px 12px;
+        }
+        &__textEnd1 {
+            font-size: 29px;
+            line-height: 41px;
+            width: 838px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__textEnd2 {
+            font-size: 44px;
+            line-height: 53px;
+        }
+        &__imagelove {
+            width: 40px;
+        }
+        &__footer-mb {
+            display: none;
+        }
+        &__footer-dk {
+            display: flex;
+            justify-content: center;
+        }
+        &__footerfeedback {
+            font-size: 13px;
+            line-height: 19px;
+            color: #231f20;
+            margin: 0;
+        }
+        &__footerMail {
+            color: #231f20;
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        &__footerlinkMail {
+            font-size: 23px;
+            line-height: 28px;
+            color: #231f20;
+            font-weight: 600;
+            margin: 0;
+        }
+        &__stalktext {
+            font-size: 13px;
+            line-height: 19px;
+        }
+        &__footerCopy {
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 500;
+            margin: 0;
+            margin-top: 40px;
+        }
+        &__iconRedSocial {
+            width: 195px;
+        }
+        &__footerCarrot {
+            width: 140px;
+        }
+        &__footerGroup {
+            flex: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:first-of-type {
+                margin-right: 144px;
+            }
+            &:last-of-type {
+                margin-right: 190px;
+            }
+        }
+    }
+}
