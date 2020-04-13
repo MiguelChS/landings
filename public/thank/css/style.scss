@@ -1,0 +1,106 @@
+body,
+p {
+    margin: 0;
+}
+* {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #105a5c;
+}
+
+.thank {
+    &__container {
+        background-color: #105a5c;
+        padding: 16px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    &__image {
+        width: 240px;
+    }
+    &__line {
+        border-bottom: 1px solid #669fa0;
+    }
+    &__marginBottom {
+        margin-bottom: 24px;
+    }
+    &__textDetails {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #eb8102;
+        text-align: center;
+    }
+    &__textDate {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+    }
+    &__textThank {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+    }
+    &__IconLove {
+        width: 20px;
+        vertical-align: bottom;
+    }
+    &__textTeam {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+    }
+    &__iconLogo {
+        width: 140px;
+        vertical-align: bottom;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .thank {
+        &__container {
+            height: 100vh;
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 24px;        
+        }
+        &__image {
+            width: 400px;
+        }
+        &__textDetails {
+            width: 760px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 20px;
+            line-height: 22px;
+        }
+        &__textDate {
+            width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+            line-height: 18px;
+        }
+        &__textThank {
+            font-size: 22px;
+            line-height: 24px;
+        }
+        &__IconLove {
+            width: 22px;
+        }
+        &__textTeam {
+            font-size: 22px;
+            line-height: 24px;
+        }
+        &__iconLogo {
+            width: 200px;
+            vertical-align: text-bottom;
+        }
+    }
+}
