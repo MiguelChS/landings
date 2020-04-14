@@ -18,7 +18,7 @@
     <meta property="og:url" content="http://greeneat.com.ar/club">
     <link rel="canonical" href="http://greeneat.com.ar/club">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
-    <link href="css/style-v2.css" rel="stylesheet">
+    <link href="css/style-v3.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163387244-1"></script>
     <script>
@@ -39,7 +39,8 @@
             <div class="landingGreenEat__mask">
                 <img class="landingGreenEat__imgTextMain" src="image/textMain.png" alt="">
                 <a class="landingGreenEat__btnPlus"
-                    href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=200519018-a1b39b50-4235-48ba-98ba-816447cac557">¡Me
+                    href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=200519018-a1b39b50-4235-48ba-98ba-816447cac557"
+                    onclick="pushClickMeSumo()">¡Me
                     sumo!</a>
             </div>
         </div>
@@ -100,7 +101,8 @@
                     </p>
                 </div>
                 <a class="landingGreenEat__btnPromotion"
-                    href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=200519018-a1b39b50-4235-48ba-98ba-816447cac557">Unirme
+                    href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=200519018-a1b39b50-4235-48ba-98ba-816447cac557"
+                    onclick="pushClickMeUnirme()">Unirme
                     al club</a>
             </div>
         </section>
@@ -120,7 +122,11 @@
             <div class="landingGreenEat__footerLine"></div>
             <div class="landingGreenEat__footerContent">
                 <div class="landingGreenEat__footerContact">
-                    <p class="landingGreenEat__footerMail">Escribinos a <br>hola@greeneat.com.ar</p>
+                    <div>
+                        <p class="landingGreenEat__footerMail">Escribinos a</p>
+                        <a class="landingGreenEat__footerlinkMail" onclick="pushClickEmail()"
+                            href="mailto:hola@greeneat.com.ar">hola@greeneat.com.ar</a>
+                    </div>
                     <p class="landingGreenEat__footerCopy">Green Eat 2020 ©</p>
                 </div>
                 <img class="landingGreenEat__footerCarrot" src="image/cut_carrot.svg" alt="">
@@ -132,7 +138,8 @@
                     bien
                     o mandarle choque los cinco al equipo. </p>
                 <p class="landingGreenEat__footerMail">Escribinos a</p>
-                <a class="landingGreenEat__footerlinkMail" href="mailto:hola@greeneat.com.ar">hola@greeneat.com.ar</a>
+                <a class="landingGreenEat__footerlinkMail" onclick="pushClickEmail()"
+                    href="mailto:hola@greeneat.com.ar">hola@greeneat.com.ar</a>
             </div>
             <div class="landingGreenEat__footerGroup">
                 <p class="landingGreenEat__stalktext">Stalkeanos:</p>
@@ -142,6 +149,17 @@
             <img class="landingGreenEat__footerCarrot" src="image/cut_carrot.svg" alt="">
         </div>
     </footer>
+    <script>
+        function pushClickMeSumo() {
+            gtag('event', 'clic', { 'event_category': 'intencion-compra', 'event_label': 'me-sumo', 'value': '0' });
+        }
+        function pushClickMeUnirme() {
+            gtag('event', 'clic', { 'event_category': 'intencion-compra', 'event_label': 'unirme-al-club', 'value': '0' })
+        }
+        function pushClickEmail() {
+            gtag('event', 'clic', { 'event_category': 'mail', 'event_label': 'hola', 'value': '0' })
+        }
+    </script>
 </body>
 
 </html>

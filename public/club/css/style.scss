@@ -219,6 +219,13 @@ body {
         font-size: 16px;
         line-height: 16px;
     }
+    &__footerlinkMail {
+        font-size: 16px;
+        line-height: 18px;
+        color: rgb(235, 123, 2);
+        font-weight: 600;
+        margin: 0;
+    }
     &__footerCopy {
         margin: 0;
         font-size: 16px;
@@ -300,6 +307,10 @@ body {
             margin-bottom: 20px;
         }
         &__footerMail {
+            font-size: 29px;
+            line-height: 50px;
+        }
+        &__footerlinkMail {
             font-size: 29px;
             line-height: 50px;
         }
