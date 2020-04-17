@@ -147,6 +147,12 @@ body {
         line-height: 18px;
         color: white;
         text-align: left;
+        > i {
+            font-weight: 600;
+            color: #105a5c;
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
     &__btnPromotion {
         color: white;
@@ -265,6 +271,10 @@ body {
         &__textPromotion {
             font-size: 24px;
             line-height: 30px;
+            > i {
+                font-size: 26px;
+                line-height: 28px;
+            }
         }
         &__rowPromotion {
             margin-bottom: 50px;
@@ -398,6 +408,10 @@ body {
         &__textPromotion {
             font-size: 22px;
             line-height: 27px;
+            i > {
+                font-size: 24px;
+                line-height: 26px;
+            }
         }
         &__btnPromotion {
             font-size: 32px;
